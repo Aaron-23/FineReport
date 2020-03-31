@@ -5,7 +5,7 @@ ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 WORKDIR /usr/local/tomcat
-ADD ./webroot ./webapps
+ADD ./webroot ./webapps/webroot
 #RUN 
 
 #wget https://fine-build.oss-cn-shanghai.aliyuncs.com/finereport/10.0/tomcat/tomcat-linux.tar.gz \
